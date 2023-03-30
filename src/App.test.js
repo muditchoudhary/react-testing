@@ -4,9 +4,8 @@ import userEvent from "@testing-library/user-event";
 import App from "./App";
 
 it("should increment a counter", () => {
-	act(() => {
-		render(<App />);
-	});
+	render(<App />);
+
 	const btn = screen.getByRole("button");
 
 	userEvent.click(btn);
